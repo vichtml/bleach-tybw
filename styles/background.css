@@ -1,0 +1,30 @@
+/*Propriedades do vídeo*/
+#background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+/*Propriedades do vídeo*/
+#background video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+/*Sombra*/
+#background::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    z-index: 1; /* Garante que a sombra esteja acima do vídeo */
+}

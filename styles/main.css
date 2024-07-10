@@ -1,0 +1,80 @@
+/*Organização do Main*/
+main{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+    margin-right: 90px ;
+
+    width: 100%;
+    max-width: 1440px;
+    
+}
+
+/*Estilização do tamanho de ícones*/
+.main_info{
+    width: 100%;
+    max-width: 570px;
+}
+
+/*Estilização do conteúdo(Texto)*/
+.main_info p{
+    font-size: 18px;
+    margin: 20px 0 28px;
+    text-align: justify;
+
+}
+
+
+.main_info div{
+    display: flex;
+    column-gap: 32px;
+}
+
+/*Personalização de Botões*/
+.main_info div a, .main_info div button{
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 3px;
+    
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+
+    transform: skew(-10px);
+}
+
+/*Estilização do botão "Assistir Trailer"*/
+.main_info div a {
+    background: #9f019f;
+    
+}
+
+/*Estilização do botão "Comprar Ingresso"*/
+.main_info div button {
+    background: transparent;
+    border: 1px solid #0099ff ;
+    
+}
+
+
+/* Estilização da barra de rolagem para navegadores WebKit */
+/* Largura e cor da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Cor da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(11, 11, 131, 0.723); /* Azul transparente */
+    border-radius: 5px; /* Borda arredondada */
+  }
+  
+  /* Cor do fundo da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Transparente */
+  }
+  
